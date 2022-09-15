@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Bank app</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-6 offset-3 text-center">
+                <h3 style="text-align:center" class="m-3">Bank application</h3>
+                <button id="accounts" class="btn btn-info">Accounts</button>
+                <button id="add-accounts"  class="btn btn-danger">Add Accounts</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" id="accountsView">
+            <div class="col-10 offset-1">
+                <h3 class="m-5" style="text-align:center">Accounts</h3>
+                <table class="table">
+                    <thead>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" id="addAccountsView">
+            <div class="col-10 offset-1">
+                <h3 class="m-5" style="text-align:center">Add Accounts</h3>
+                <input type="text" placeholder="id" class="form-control"><br>
+                <input type="text" placeholder="name" class="form-control"><br>
+                <input type="text" placeholder="phone" class="form-control"><br>
+                <input type="text" placeholder="email" class="form-control"><br>
+                <button id="saveAccountBtn" class="btn btn-primary form-control">Save</button><br>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="redux.js"></script>
+    <script src="store.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
